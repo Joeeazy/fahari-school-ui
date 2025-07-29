@@ -27,7 +27,7 @@ const columns = [
   {
     header: "Phone",
     accessor: "phone",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Address",
@@ -54,16 +54,16 @@ const ParentsListPage = () => {
       </td>
       <td className="hidden md:table-cell">{item.students.join(", ")}</td>
       <td className="hidden md:table-cell">{item.phone}</td>
-      <td className="hidden md:table-cell">{item.address}</td>
+      <td className="hidden lg:table-cell">{item.address}</td>
       <td>
         <div className="flex items-center gap-2">
           <Link href={`/list/parents/${item.id}`}>
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
-              <Image src="/view.png" alt="" width={16} height={16} />
+            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-joeSky">
+              <Image src="/edit.png" alt="" width={16} height={16} />
             </button>
           </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
+            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-joePurple">
               <Image src="/delete.png" alt="" width={16} height={16} />
             </button>
           )}

@@ -30,17 +30,17 @@ const columns = [
   {
     header: "Grade",
     accessor: "grade",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Phone",
     accessor: "phone",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Address",
     accessor: "address",
-    className: "hidden lg:table-cell",
+    className: "hidden md:table-cell",
   },
   {
     header: "Actions",
@@ -74,12 +74,12 @@ const StudentListPage = () => {
       <td>
         <div className="flex items-center gap-2">
           <Link href={`/list/students/${item.id}`}>
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
+            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-joeSky">
               <Image src="/view.png" alt="" width={16} height={16} />
             </button>
           </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
+            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-joePurple">
               <Image src="/delete.png" alt="" width={16} height={16} />
             </button>
           )}
