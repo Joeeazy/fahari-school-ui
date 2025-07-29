@@ -1,4 +1,4 @@
-# Lama Dev School Management Dashboard
+# Fahari School Management Dashboard
 
 ## Getting Started
 
